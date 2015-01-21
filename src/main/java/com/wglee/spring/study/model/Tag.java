@@ -5,16 +5,9 @@ import javax.persistence.*;
 /**
  * Created by leewangeun on 15. 1. 21..
  */
-@Entity
 public class Tag {
-	@Id
-	@GeneratedValue
 	private Long ig;
-
 	private String name;
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "ARTICLE_ID")
 	private Article article;
 
 	public Tag(String name) {

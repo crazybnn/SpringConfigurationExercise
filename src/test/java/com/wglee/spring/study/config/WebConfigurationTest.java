@@ -6,6 +6,9 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class WebConfigurationTest {
@@ -23,9 +26,10 @@ public class WebConfigurationTest {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(WebConfiguration.class);
 		Article article = context.getBean("article", Article.class);
 
-//		Tag firstTag = article.getFirstTag();
+		List<Tag> tags = article.getTags();
+		int size = tags.size();
 
-//		assertNotNull(firstTag);
+		assertEquals(size, 1);
 	}
 
 	@Test
@@ -42,8 +46,9 @@ public class WebConfigurationTest {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Article article = context.getBean("article", Article.class);
 
-//		Tag firstTag = article.getFirstTag();
+		List<Tag> tags = article.getTags();
+		int size = tags.size();
 
-//		assertNotNull(firstTag);
+		assertEquals(size, 1);
 	}
 }

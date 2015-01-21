@@ -1,7 +1,7 @@
 package com.wglee.spring.study.config;
 
-import com.wglee.spring.study.model.Tag;
 import com.wglee.spring.study.model.Article;
+import com.wglee.spring.study.model.Tag;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,10 +14,10 @@ import java.util.List;
 @Configuration
 public class WebConfiguration {
 	@Bean
-	public Article tagContainer(Tag tag) {
+	public Article article(Tag tag) {
 		Article article = new Article();
 		article.setContent("Hello, Spring!!");
-//		article.setTags(createTagList(tag));
+		article.setTags(createTagList(tag));
 		return article;
 	}
 
