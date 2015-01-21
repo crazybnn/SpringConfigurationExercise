@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class WebConfiguration {
 	@Bean
-	public Article tagContainer() {
+	public Article article() {
 		Article article = new Article();
 		article.setId(1L);
 		article.setContent("Hello, Spring!!");
