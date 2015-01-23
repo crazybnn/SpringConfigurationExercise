@@ -3,7 +3,7 @@ package com.wglee.spring.study.model;
 import javax.persistence.Entity;
 
 /**
- * @Author wangeun.lee
+ * @Author wglee21g@gmail.com
  */
 @Entity
 public class Article {

@@ -2,11 +2,13 @@ package com.wglee.spring.study.config;
 
 import com.wglee.spring.study.model.Article;
 import org.junit.Test;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import static org.junit.Assert.assertNotNull;
 
+/**
+ * @author wglee21g@gmail.com
+ */
 public class WebConfigurationTest {
 	@Test
 	public void getTagContainerBean_XML() throws Exception {
