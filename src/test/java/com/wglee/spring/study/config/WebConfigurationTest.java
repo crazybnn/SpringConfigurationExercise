@@ -10,6 +10,9 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+/**
+ * @author wglee21g@gmail.com
+ */
 public class WebConfigurationTest {
 	@Test
 	public void getTagContainerBean_Annotation() {

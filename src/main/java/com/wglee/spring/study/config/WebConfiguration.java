@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by leewangeun on 15. 1. 20..
+ * @author wglee21g@gmail.com
  */
 @Configuration
 public class WebConfiguration {
