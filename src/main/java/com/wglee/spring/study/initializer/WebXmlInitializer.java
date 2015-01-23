@@ -1,6 +1,4 @@
-package com.wglee.spring.study.initializer;/**
- * Created by 1002371 on 15. 1. 23..
- */
+package com.wglee.spring.study.initializer;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -12,7 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 /**
- * @author wangeun.lee@sk.com
+ * @author wglee21g@gmail.com
  */
 public class WebXmlInitializer implements WebApplicationInitializer {
 	@Override

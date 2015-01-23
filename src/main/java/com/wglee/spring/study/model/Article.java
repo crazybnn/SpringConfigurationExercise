@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by leewangeun on 15. 1. 21..
+ * @author wglee21g@gmail.com
  */
 @Entity
 @NamedQueries({
