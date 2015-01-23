@@ -8,21 +8,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.*;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leewangeun on 15. 1. 21..
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:applicationContext.xml")
-public class DatabaseConfigTest {
+public class ArticleRepositoryTest {
 	@Autowired
 	private ArticleRepository articleRepository;
 
 	@Test
-	public void testFindOne() throws Exception {
-		Article article = articleRepository.findOne(0L);
+	public void testFindAll() throws Exception {
+		List<Article> articleList = articleRepository.findAll();
 
-		assertNull(article);
+		assertEquals(0, articleList.size());
 	}
 }

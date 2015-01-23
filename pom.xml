@@ -55,7 +55,7 @@
             <version>${junitVersion}</version>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>

@@ -2,12 +2,10 @@ package com.wglee.spring.study.initializer;/**
  * Created by 1002371 on 15. 1. 23..
  */
 
-import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

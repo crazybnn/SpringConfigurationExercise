@@ -8,6 +8,9 @@ import java.util.List;
  * Created by leewangeun on 15. 1. 21..
  */
 @Entity
+@NamedQueries({
+		@NamedQuery(name = "Article.findAll", query = "SELECT a FROM Article a")
+})
 public class Article {
 	@Id
 	@GeneratedValue
