@@ -1,11 +1,8 @@
 package com.wglee.spring.study.model;
 
-import javax.persistence.Entity;
-
 /**
  * @Author wglee21g@gmail.com
  */
-@Entity
 public class Article {
 	private Long id;
 	private String content;
