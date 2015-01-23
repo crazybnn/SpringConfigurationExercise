@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class Tag {
 	@Id
 	@GeneratedValue
-	private Long ig;
+	private Long id;
 
 	private String name;
 
@@ -21,12 +21,12 @@ public class Tag {
 		this.name = name;
 	}
 
-	public Long getIg() {
-		return ig;
+	public Long getId() {
+		return id;
 	}
 
-	public void setIg(Long ig) {
-		this.ig = ig;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getName() {

@@ -16,7 +16,7 @@ public class Article {
 
 	private String content;
 
-	@OneToMany(mappedBy = "tag", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "id")
 	private List<Tag> tags = new ArrayList<>();
 
 	public Long getId() {
