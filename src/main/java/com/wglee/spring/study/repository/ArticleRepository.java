@@ -9,7 +9,7 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 
 /**
- * Created by leewangeun on 15. 1. 21..
+ * @author wglee21g@gmail.com
  */
 @Repository
 public class ArticleRepository {

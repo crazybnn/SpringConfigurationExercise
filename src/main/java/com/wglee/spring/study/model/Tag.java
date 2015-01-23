@@ -3,7 +3,7 @@ package com.wglee.spring.study.model;
 import javax.persistence.*;
 
 /**
- * Created by leewangeun on 15. 1. 21..
+ * @author wglee21g@gmail.com
  */
 @Entity
 public class Tag {

@@ -1,17 +1,25 @@
-package com.wglee.spring.study.initializer;/**
- * Created by 1002371 on 15. 1. 23..
- */
+package com.wglee.spring.study.initializer;
 
-import org.springframework.web.WebApplicationInitializer;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import com.wglee.spring.study.config.WebConfiguration;
+import com.wglee.spring.study.config.WebMvcConfiguration;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * @author wangeun.lee@sk.com
+ * @author wglee21g@gmail.com
  */
-public class WebAnnotationInitializer implements WebApplicationInitializer {
+public class WebAnnotationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
-	public void onStartup(ServletContext servletContext) throws ServletException {
+	protected Class<?>[] getRootConfigClasses() {
+		return new Class<?>[]{WebConfiguration.class};
+	}
+
+	@Override
+	protected Class<?>[] getServletConfigClasses() {
+		return new Class<?>[]{WebMvcConfiguration.class};
+	}
+
+	@Override
+	protected String[] getServletMappings() {
+		return new String[]{"/"};
 	}
 }

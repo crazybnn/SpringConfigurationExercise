@@ -1,13 +1,11 @@
-package com.wglee.spring.study.controller;/**
- * Created by 1002371 on 15. 1. 23..
- */
+package com.wglee.spring.study.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @author wangeun.lee@sk.com
+ * @author wglee21g@gmail.com
  */
 @Controller
 public class HelloController {
