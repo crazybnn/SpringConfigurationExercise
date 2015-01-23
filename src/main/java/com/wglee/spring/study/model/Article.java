@@ -1,13 +1,11 @@
 package com.wglee.spring.study.model;
 
-import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by leewangeun on 15. 1. 21..
+ * @author wglee21g@gmail.com
  */
-@Entity
 public class Article {
 	private Long id;
 	private String content;
