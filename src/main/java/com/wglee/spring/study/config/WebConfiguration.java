@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Author wangeun.lee
+ * @Author wglee21g@gmail.com
  */
 @Configuration
 public class WebConfiguration {
