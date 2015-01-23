@@ -9,15 +9,6 @@ import static org.junit.Assert.assertNotNull;
 
 public class WebConfigurationTest {
 	@Test
-	public void getTagContainerBean_Annotation() {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(WebConfiguration.class);
-
-		Article article = context.getBean("article", Article.class);
-
-		assertNotNull(article);
-	}
-
-	@Test
 	public void getTagContainerBean_XML() throws Exception {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
